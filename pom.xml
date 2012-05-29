@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.alexecollins</groupId>
+    <artifactId>jmeter-custom-sampler-template</artifactId>
+    <packaging>pom</packaging>
+    <version>0.0.1-SNAPSHOT</version>
+
+    <modules>
+        <module>jmeter-custom-samplers</module>
+        <module>app</module>
+    </modules>
+
+    <name>JMeter custom sampler skeleton</name>
+
+    <description>
+        This project has the basic layout for creating a JMeter integration
+        test with a custom sampler.
+
+        The test includes a sample .jmx file, but to create the test you'll
+        need to package and copy the jar into $JMETER_INSTALL_LIB/lib/ext.
+    </description>
+
+    <build>
+        <plugins>
+            <plugin>
+                  <artifactId>maven-compiler-plugin</artifactId>
+                  <version>2.3.2</version>
+                  <configuration>
+                      <source>1.6</source>
+                      <target>1.6</target>
+                  </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
